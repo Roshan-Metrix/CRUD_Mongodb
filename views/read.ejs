@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-zinc-900 p-10 text-white">
+      <div class="nav p-5">
+        <a href="/" class="text-blue-500 hover:underline">Back To Home</a>
+      </div>
+      <h1 class="text-3xl font-bold px-5">All Users</h1>
+      <p class="text-lg py-2 px-5">All details are below:</p>
+      <div class="users flex flex-wrap gap-5 px-5">
+        <% user.forEach(function(user){ %>
+          <div class="user w-72 p-4 bg-zinc-800 rounded-lg">
+            <div class="w-full h-52 rounded-lg bg-zinc-600 overflow-hidden">
+              <img
+                class="w-full h-full object-cover object-center"
+                src="<%= user.image %>"
+                alt="User Image"
+              />
+            </div>
+            <div class="mt-4">
+              <h3 class="text-xl tracking-tighter"><%= user.name %></h3>
+              <h5 class="text-zinc-500"><%= user.email %></h5>
+            </div>
+            <div class="flex gap-3 mt-3">
+              <a href="" class="text-zinc-200">Edit User</a>
+              <a href="" class="text-red-500">Delete User</a>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+</html>
