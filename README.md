@@ -65,10 +65,10 @@ This project is licensed under the [MIT License](license.txt).
 
 ## Screenshot
 
-![CRUD_Mongodb Screenshot](./screenshots/screenshot1.png)
+![CRUD_Mongodb Screenshot](./screenshots/screenshots1.png)
 
 
 ![CRUD_Mongodb Screenshot](./screenshots/screenshot2.png)
 
 
-![CRUD_Mongodb Screenshot](./screenshots/screenshot3.png)
+![CRUD_Mongodb Screenshot](./screenshots/screenshots3.png)
