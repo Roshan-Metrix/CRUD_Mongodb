@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="w-full h-screen bg-zinc-900 p-10 text-white">
+    <div class="w-full h-full bg-zinc-900 p-10 text-white">
       <div class="nav p-5">
         <a href="/" class="text-blue-500 hover:underline">Back To Home</a>
       </div>
@@ -29,8 +29,8 @@
               <h5 class="text-zinc-500"><%= user.email %></h5>
             </div>
             <div class="flex gap-3 mt-3">
-              <a href="" class="text-zinc-200">Edit User</a>
-              <a href="" class="text-red-500">Delete User</a>
+              <a href="/edit/<%= user.id %>" class="text-zinc-200">Edit User</a>
+              <a href="/delete/<%= user._id  %>" class="text-red-500">Delete User</a>
             </div>
           </div>
         <% }) %>
