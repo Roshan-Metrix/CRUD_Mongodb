@@ -56,7 +56,7 @@ Step-by-step instructions to set up the project locally:
 
 4. Run App
 
-       node run app.js
+       node app.js
 
   
 ## License
