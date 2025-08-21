@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const userModel = require('./models/user')
+const dotenv from 'dotenv'
+dotenv.config();
 
 app.set('view engine', 'ejs');
 app.use(express.json());
